@@ -1,0 +1,21 @@
+# Dependencias y entornos virtuales
+node_modules/
+venv/
+env/
+
+# Archivos de entorno que contienen variables sensibles
+.env
+.env.local
+.env.production
+*.env
+
+# Archivos basura del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de editores de texto e IDEs
+.vscode/
+.idea/
+*.swp
+*~
+README.md~
