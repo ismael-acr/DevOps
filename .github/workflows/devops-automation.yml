@@ -1,0 +1,16 @@
+name: Validacion Simple
+
+on: [push] #Se Ejecuta cada vez que se sube un cambio
+
+jobs:
+  revisar-archivos:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Bajar el codigo
+        uses: actions/checkout@v3
+
+      - name: Buscar HTML y CSS #Aqui busca los archivos y alerta si no los encuentra
+        run: |
+          ls src/index.html
+          ls src/styles.css
